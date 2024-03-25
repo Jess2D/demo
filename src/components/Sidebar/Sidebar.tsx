@@ -10,7 +10,7 @@ export const Sidebar = () => {
     <SidebarContainer>
       <SidebarList>
         <SidebarLabel>Section 1</SidebarLabel>
-        <SidebarItem>Loren Ipsum</SidebarItem>
+        <SidebarItem>Loren Ipsum1</SidebarItem>
         <SidebarItem>Loren Ipsum</SidebarItem>
         <SidebarItem>Loren Ipsum</SidebarItem>
         <SidebarItem>Loren Ipsum</SidebarItem>

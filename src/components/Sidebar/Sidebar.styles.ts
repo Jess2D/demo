@@ -23,7 +23,7 @@ export const SidebarItem = styled.li`
   }
 `;
 
-export const SidebarLabel = styled.label`
+export const SidebarLabel = styled.h2`
   font-size: 18px;
   font-weigth: 700;
   maigin-top: 12px;

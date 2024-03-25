@@ -1,54 +1,76 @@
 import styled from "styled-components";
+import { Colors, Spacings } from '@ptml/design-system';
 
-// Styled-components para os elementos do Header
 export const HeaderContainer = styled.header`
-  background-color: #fff;
+  background-color: ${Colors.Blue70};
+  padding: 0 ${Spacings.medium};
   display: flex;
   direction: row;
   justify-content: space-between;
-  padding: 0 16px;
   align-items: center;
-  padding: 0 16px;
   height: 60px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
-  background-color: #f46036;
+  z-index: 100;
   color: white;
+  font-family: inherit;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 `;
 
 export const NavBarContainer = styled.div`
-  flex-grow: 3;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-items: center;
+  flex-grow:2;
 `;
 export const LogoContainer = styled.div`
   width: 250px;
+`;
+
+export const SearchContainer = styled.div`
+  align-items: center;
+  justify-content:center;
+  width: 50%;
+  margin-top: ${Spacings.xxsmall};
 `;
 
 export const Logo = styled.div`
   font-weight: bold;
 `;
 
-export const SearchBarContainer = styled.div`
-  min-width: 400px;
-  justify-content: rigth;
-  // Adicione estilos para o contêiner da barra de pesquisa
+export const SettingsContainer = styled.div`
+  display: flex;
+  flex-direction:row;
+  button:hover {
+    background: ${Colors.Blue85};
+  }
 `;
 
-export const SearchInput = styled.input`
-  padding: 8px;
-  margin-right: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-`;
 
 export const Link = styled.a`
-  margin: 16px;
-  cursor: pointer;
-  color: #fcd1c5;
 
-  &:hover {
-    color: #fab29e;
-  }
+    cursor: pointer;
+    text-decoration: none;
+    padding: 1em .7em;
+    color: ${Colors.White};
+    position: relative;
+    min-width: 4em;
+    place-content: center;
+    align-items: center;
+    text-align: center;
+
+    svg{
+      margin-right: ${Spacings.minuscule};
+
+    }
+
+    &:hover {
+      color: ${Colors.White};
+      background: ${Colors.Blue85};
+    }
 `;
